@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "buildCommand": "cd rrb-alp-prep-hub/frontend && npm install && npm run build",
+  "outputDirectory": "rrb-alp-prep-hub/frontend/dist",
+  "installCommand": "npm install --ignore-scripts --workspace=frontend --workspace=shared",
+  "framework": "vite"
+}
