@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Build outputs
+dist/
+build/
+.next/
+
+# Environment
+.env
+.env.local
+.env.production
+backend/.env
+
+# Database (dev SQLite file)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+database/*.db
+
+# Uploads (local PDF uploads — not committed)
+backend/uploads/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Drizzle
+drizzle/
+
+# TypeScript compiled
+*.tsbuildinfo
