@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { api } from '../services/api';
-import type { TestSession } from '@rrb-alp/shared/src/types/exam';
+import type { TestSession } from '../../../shared/src/types/exam';
 
 export type ExamStatus = 'loading' | 'ready' | 'started' | 'submitting' | 'submitted' | 'error';
 
