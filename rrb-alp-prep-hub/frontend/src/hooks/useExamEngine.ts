@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { api } from '../services/api';
-import type { TestSession, QuestionAttemptRecord } from 'shared/src/types/exam';
+import type { TestSession } from '@rrb-alp/shared/src/types/exam';
 
 export type ExamStatus = 'loading' | 'ready' | 'started' | 'submitting' | 'submitted' | 'error';
 
@@ -28,7 +28,7 @@ export function useExamEngine(sessionId: string) {
   });
 
   const lastTickRef = useRef<number>(Date.now());
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<number | null>(null);
   const startedAtRef = useRef<number>(0);
 
   // Load session

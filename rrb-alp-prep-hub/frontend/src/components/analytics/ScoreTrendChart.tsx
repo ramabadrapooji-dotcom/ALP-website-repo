@@ -20,7 +20,7 @@ export default function ScoreTrendChart({ data }: ScoreTrendChartProps) {
     );
   }
 
-  const { points, maxScore, minScore } = useMemo(() => {
+  const { points } = useMemo(() => {
     const scores = data.map(d => d.score);
     const minS = Math.min(...scores, 0);
     const maxS = Math.max(...scores, 100);
@@ -43,7 +43,7 @@ export default function ScoreTrendChart({ data }: ScoreTrendChartProps) {
       };
     });
     
-    return { points: pts, maxScore: yMax, minScore: yMin };
+    return { points: pts };
   }, [data]);
 
   const pathD = points.length === 1 

@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { api } from '../services/api';
-import { Search, Filter, Trash2, Edit3, ChevronLeft, ChevronRight, Library } from 'lucide-react';
+import { Search, Trash2, ChevronLeft, ChevronRight, Library } from 'lucide-react';
 import { clsx } from 'clsx';
 
 const DIFFICULTY_COLORS: Record<string, string> = {

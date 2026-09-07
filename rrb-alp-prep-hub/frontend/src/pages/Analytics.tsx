@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { api } from '../services/api';
-import { Activity, BookOpen, Layers } from 'lucide-react';
+import { BookOpen, Layers } from 'lucide-react';
 
 export default function Analytics() {
   const [data, setData] = useState<any>(null);

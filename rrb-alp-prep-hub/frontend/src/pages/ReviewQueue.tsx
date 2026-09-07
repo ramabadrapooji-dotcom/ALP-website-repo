@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { api } from '../services/api';
-import { Check, X, ArrowRight, Save, AlertCircle, RefreshCw } from 'lucide-react';
+import { Check, X, ArrowRight, AlertCircle } from 'lucide-react';
 
 interface Option {
   id: string;
@@ -49,7 +49,7 @@ export default function ReviewQueue() {
   const fetchQueue = async () => {
     try {
       setLoading(true);
-      const res = await api.get(`/imports/${importId}/review`);
+      const res: any = await api.get(`/imports/${importId}/review`);
       setQuestions(res.data);
       if (res.data.length > 0) {
         initEditState(res.data[0]);

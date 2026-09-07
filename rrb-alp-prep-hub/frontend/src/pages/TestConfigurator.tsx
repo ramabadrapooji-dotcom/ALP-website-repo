@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../services/api';
 import {
-  RRB_ALP_CBT1_CONFIG,
   QUICK_TEST_PRESETS,
   DIFFICULTY_PRESETS,
 } from '../../../shared/src/constants/examConfig';
